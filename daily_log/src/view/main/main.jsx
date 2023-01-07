@@ -1,6 +1,6 @@
 import React from "react";
 import './main.css';
-import NavBar from '../components/bar';
+import NavBar from '../../components/bar';
 
 //Card UI
 import {Card, CardActionArea, CardContent,Typography} from "@mui/material";
@@ -9,7 +9,7 @@ import {Card, CardActionArea, CardContent,Typography} from "@mui/material";
 import Grid2 from '@mui/material/Unstable_Grid2';
 
 //Data Import
-import data from '../topData.json'
+import data from '../../topData.json'
 
 function Main_view(){
     return(

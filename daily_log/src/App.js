@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+//routing pages
+import Main from "./view/main/main"
+import Total from "./view/total/total"
 
-import Main from "./view/main"
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Routes>
         <Route>
             <Route exact path="/" element={<Main />}></Route>
+            <Route exact path="/total" element={<Total />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

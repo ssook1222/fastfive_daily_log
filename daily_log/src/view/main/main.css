@@ -4,8 +4,7 @@ html{
 body{
     height: 100%;
     margin: 0;
-    background: linear-gradient(#defde6, #d1e7fd) no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(#defde6, #d1e7fd) no-repeat fixed;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 #root{

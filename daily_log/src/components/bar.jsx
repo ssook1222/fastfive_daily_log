@@ -9,8 +9,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['전체 식당 페이지 확인'];
-const link =['/'];
+const pages = ['전체 식당 페이지 확인', '상위 맛집 확인'];
+const link =['/total', '/'];
 
 const NavBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
