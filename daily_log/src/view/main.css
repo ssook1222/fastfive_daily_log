@@ -1,0 +1,63 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(#defde6, #d1e7fd) no-repeat;
+    background-attachment: fixed;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+#root{
+    height: 100%;
+}
+.main-background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main-layout{
+    width: 100%;
+    margin: auto;
+}
+
+#main-title{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 600%;
+    color: white;
+    text-shadow: -1px 0px 7px #a9cdc8, 0px 1px 7px #a9cdc8, 1px 0px 7px #a9cdc8, 0px -1px 7px #a9cdc8;
+}
+
+#main-card{
+    width: 80%;
+    height: 100%;
+    margin: auto auto 200px;
+}
+
+#card-top-guide{
+    color: #575454;
+    text-align: end;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#main-item-list{
+    margin-top: 10px;
+}
+
+.list_card_title{
+    padding-top: 1px;
+    padding-left: 3%;
+}
+.my_opinion{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.list_image{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
