@@ -1,6 +1,7 @@
 import React from "react";
 import './main.css';
 import NavBar from '../../components/bar';
+import Footer from '../../components/footer'
 
 //Card UI
 import {Card, CardActionArea, CardContent,Typography} from "@mui/material";
@@ -37,6 +38,7 @@ function Main_view(){
                         </Grid2>
                     </CardContent>
                 </Card>
+                <Footer></Footer>
             </div>
         </div>
     )

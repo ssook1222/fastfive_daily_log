@@ -5,7 +5,7 @@ body{
     height: 100%;
     margin: 0;
     background: linear-gradient(#defde6, #d1e7fd) no-repeat fixed;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'IBM Plex Sans KR', sans-serif !important;
 }
 #root{
     height: 100%;
@@ -31,7 +31,7 @@ body{
 #main-card{
     width: 80%;
     height: 100%;
-    margin: auto auto 200px;
+    margin: auto auto 0px;
 }
 
 #card-top-guide{

@@ -1,11 +1,16 @@
 import React from "react";
 import {useState} from "react";
 
-//import MUI
+//import Bar
 import NavBar from "../../components/bar";
+import Footer from '../../components/footer'
+
+//import MUI
 import {Card, CardActionArea, CardContent,Typography} from "@mui/material";
 import Chip from '@mui/material/Chip';
 import Grid2 from '@mui/material/Unstable_Grid2';
+
+
 
 //import css
 import './total.css'
@@ -19,7 +24,7 @@ import totalData from '../../totalData.json'
 
 function TotalView() {
 
-    const [choice, setChoice] = useState();
+    const [choice, setChoice] = useState("전체");
 
     const handleClick = (e) => {
         console.log(e.currentTarget.id);
@@ -36,6 +41,7 @@ function TotalView() {
                 <Card id="total-back-card">
                     <CardContent>
                         <div className={"user-choice"}>
+                            <Chip id="전체" name="전체" label="전체" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}} />
                             <Chip id="한식" name="한식" label="한식" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}} />
                             <Chip id="양식" name="양식" label="양식" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}}/>
                             <Chip id="일식" name="일식" label="일식" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}}/>
@@ -43,8 +49,8 @@ function TotalView() {
                             <Chip id="베트남식" name="베트남식" label="베트남식" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}}/>
                         </div>
                         <hr  style={{marginBottom:"20px"}}/>
-                        {/*사용자 선택 안 했을 때 */}
-                        {choice===undefined &&
+                        {/*사용자 선택 안 했을 때 && 전체 눌렀을 때 */}
+                        {choice==="전체" &&
                         <Grid2 container spacing={3} id="main-item-list">
                             <>
                                 {totalData.list.map((contents) =>(
@@ -130,6 +136,7 @@ function TotalView() {
 
                     </CardContent>
                 </Card>
+                <Footer></Footer>
             </div>
         </div>
     );
