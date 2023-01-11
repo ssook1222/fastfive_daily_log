@@ -10,17 +10,15 @@ import {Card, CardActionArea, CardContent,Typography} from "@mui/material";
 import Chip from '@mui/material/Chip';
 import Grid2 from '@mui/material/Unstable_Grid2';
 
-
-
 //import css
 import './total.css'
 
 //import data
-import koreanData from '../../totalKoreanData.json'
-import japaneseData from '../../totalJapaneseData.json'
-import ItalyData from '../../totalItalyData.json'
-import vietnamData from '../../totalVietnamData.json'
-import totalData from '../../totalData.json'
+import koreanData from '../../data/totalKoreanData.json'
+import japaneseData from '../../data/totalJapaneseData.json'
+import ItalyData from '../../data/totalItalyData.json'
+import vietnamData from '../../data/totalVietnamData.json'
+import totalData from '../../data/totalData.json'
 
 function TotalView() {
 
