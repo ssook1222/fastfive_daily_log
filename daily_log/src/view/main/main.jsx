@@ -13,6 +13,7 @@ import Grid2 from '@mui/material/Unstable_Grid2';
 import data from '../../data/topData.json'
 
 import Paging from "../../components/paging";
+import {Link} from "react-router-dom";
 
 
 // 참고 : https://clolee.tistory.com/127
@@ -46,6 +47,7 @@ function Main_view(){
                                             <img className="list_image" src={contents.url}></img>
                                             <h2 className="list_card_title">{contents.name}</h2>
                                             <p className="my_opinion">{contents.opinion}</p>
+                                            <Link to="/detail" state={{data : contents.name}}>#</Link>
                                         </Card>
                                     </Grid2>
                                 ))}
