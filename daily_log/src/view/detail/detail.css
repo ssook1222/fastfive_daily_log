@@ -1,0 +1,10 @@
+.box{
+    width: 100%;
+}
+
+.detail-list{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
