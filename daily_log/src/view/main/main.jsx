@@ -12,21 +12,12 @@ import Grid2 from '@mui/material/Unstable_Grid2';
 //Data Import
 import data from '../../data/topData.json'
 
-import Paging from "../../components/paging";
 import {Link} from "react-router-dom";
 
 
 // 참고 : https://clolee.tistory.com/127
 
 function Main_view(){
-
-    const [products, setProducts] = useState([]);  // 리스트에 나타낼 아이템들
-    const [count, setCount] = useState(30); // 아이템 총 개수
-    const [currentPage, setCurrentPage] = useState(1); // 현재 페이지. default 값으로 1
-    const [postPerPage] = useState(6); // 한 페이지에 보여질 아이템 수
-    const [indexOfLastPost, setIndexOfLastPost] = useState(0); // 현재 페이지의 마지막 아이템 인덱스
-    const [indexOfFirstPost, setIndexOfFirstPost] = useState(0); // 현재 페이지의 첫번째 아이템 인덱스
-    const [currentPosts, setCurrentPosts] = useState(0); // 현재 페이지에서 보여지는 아이템들
 
     return(
         <div className="main-background">
@@ -55,7 +46,6 @@ function Main_view(){
                                 </>
                         </Grid2>
                     </CardContent>
-                    <Paging page={currentPage} count={count} setPage={setCurrentPage}></Paging>
                 </Card>
                 <Footer></Footer>
             </div>
