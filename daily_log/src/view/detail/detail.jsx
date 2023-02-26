@@ -6,16 +6,42 @@ import Footer from '../../components/footer'
 
 //import useLocation
 import {useLocation} from 'react-router-dom';
+import {useEffect, useRef} from 'react'
 
 //Card UI
-import {Card, CardActionArea, CardContent, Pagination, Typography} from "@mui/material";
+import {Card} from "@mui/material";
 
 //import CSS
 import "./detail.css";
 
 function Detail() {
-    //데이터 가져옴.
-    console.log(useLocation().state.data)
+
+    const mapElement = useRef(null);
+    let lat = useLocation().state.data.lat;
+    let lng = useLocation().state.data.lng;
+
+    useEffect(()=>{
+        const {naver} = window;
+        if (!mapElement.current || !naver) return;
+
+    const location = new naver.maps.LatLng(lat, lng);
+    const mapOptions: naver.maps.MapOptions = {
+      center: location,
+      zoom: 20,
+      zoomControl: true,
+      zoomControlOptions: {
+        position: naver.maps.Position.TOP_RIGHT,
+      },
+    };
+
+    const map = new naver.maps.Map(mapElement.current, mapOptions);
+    new naver.maps.Marker({
+      position: location,
+      map,
+    });
+
+    },[]);
+
     return(
         <div className="box">
             <NavBar></NavBar>
@@ -23,6 +49,7 @@ function Detail() {
                 <Card className="detail-list">
                     <h2>{useLocation().state.data.name}</h2>
                     <hr />
+                    <div ref={mapElement} style={{ minHeight: '400px' }} />
                     <p>{useLocation().state.data.opinion}</p>
                 </Card>
             </div>
