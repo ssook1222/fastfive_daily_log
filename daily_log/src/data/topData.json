@@ -13,26 +13,31 @@
     },
     {
       "id": 3, "name": "백소정",
+      "lat": 37.563284, "lng":126.972031,
       "url":"https://ldb-phinf.pstatic.net/20221025_83/1666676850732gtnxA_JPEG/10.jpg",
       "opinion": "마제소바 맛집!! 심지어 사무실과 같은 건물이다. 웨이팅이 좀 있다는 것이 흠이지만 그거 고려해도 맛있다."
     },
     {
       "id": 4, "name": "엉클파스타",
+      "lat": 37.5623, "lng":126.9692,
       "url":"https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDhfMjAx%2FMDAxNjE1MTc4OTQ0MjMw.ox4jZiLZ5fd7sn1C5-MP2qyE_TXrwbgf1ZiCiYwum-Ug.I49yRmLlNzwjwvVDB2_CzkNF1gfKQZ7C7-GyXkJWV0Ag.JPEG.kimseolkkachi%2F20210307_111659.jpg",
       "opinion": "가성비 파스타집. 양식집이 거의 없는 회사 인근에서 가격 대비 맛과 양을 보장하는 곳! 다만 10분 정도 걸어야 한다."
     },
     {
       "id": 5, "name": "돌담길삼겹살",
+      "lat": 37.5636, "lng":126.9703,
       "url":"https://ldb-phinf.pstatic.net/20200219_289/1582088112348LjRjF_JPEG/r8xZJBPivzX_eNentgutp7p1.jpeg.jpg",
       "opinion": "김치찌개가 먹고 싶으면 이 곳으로! 저렴한 가격과 넓은 식당 덕분에 많은 사람이 가도 좋다. 심지어 3분 거리다."
     },
     {
       "id": 6, "name": "서대문식당",
+      "lat": 37.5644, "lng":126.9689,
       "url":"https://ldb-phinf.pstatic.net/20220124_214/1643013092676pL0RJ_JPEG/1586438184520.jpg",
       "opinion": "김치찌개 / 손만두 전골 맛집, 10분 정도 걸어야 하지만 가성비와 맛은 최고 👍"
     },
     {
       "id": 7, "name": "크레이지후라이",
+      "lat": 37.5631, "lng":126.9752,
       "url":"https://ldb-phinf.pstatic.net/20200326_36/1585200551163aAPgh_JPEG/BUTrqi84RhNF1G7hBH2GEtyG.jpg",
       "opinion": "시청역 근처 몇 없는 분식집 중 그나마 찾은 맛집! 양도 많고 맛도 괜찮다."
     }
