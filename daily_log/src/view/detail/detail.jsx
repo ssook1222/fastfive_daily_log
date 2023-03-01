@@ -1,5 +1,7 @@
 import React from "react";
 
+import OtherList from "./otherList";
+
 //import Bar
 import NavBar from "../../components/bar";
 import Footer from '../../components/footer'
@@ -19,15 +21,20 @@ function Detail() {
     const mapElement = useRef(null);
     let lat = useLocation().state.data.lat;
     let lng = useLocation().state.data.lng;
+    let name = useLocation().state.data.name;
 
     useEffect(()=>{
-        const {naver} = window;
-        if (!mapElement.current || !naver) return;
+    const {naver} = window;
+    if (!mapElement.current || !naver) return;
+
+    var infowindow = new naver.maps.InfoWindow({
+    content: name
+    });
 
     const location = new naver.maps.LatLng(lat, lng);
     const mapOptions: naver.maps.MapOptions = {
       center: location,
-      zoom: 20,
+      zoom: 25,
       zoomControl: true,
       zoomControlOptions: {
         position: naver.maps.Position.TOP_RIGHT,
@@ -35,10 +42,20 @@ function Detail() {
     };
 
     const map = new naver.maps.Map(mapElement.current, mapOptions);
-    new naver.maps.Marker({
+    let marker = new naver.maps.Marker({
       position: location,
       map,
     });
+
+    naver.maps.Event.addListener(marker, "click", function(e) {
+        if (infowindow.getMap()) {
+            infowindow.close();
+        } else {
+            infowindow.open(map, marker);
+        }
+    });
+
+    infowindow.open(map, marker);
 
     },[]);
 
@@ -48,9 +65,12 @@ function Detail() {
             <div>
                 <Card className="detail-list">
                     <h2>{useLocation().state.data.name}</h2>
+                    <p>{useLocation().state.data.opinion}</p>
                     <hr />
                     <div ref={mapElement} style={{ minHeight: '400px' }} />
-                    <p>{useLocation().state.data.opinion}</p>
+                    <hr />
+                    <h3>다른 음식 종류의 식당 확인하기</h3>
+                    <OtherList></OtherList>
                 </Card>
             </div>
 
