@@ -69,7 +69,7 @@ function Detail() {
                     <hr />
                     <div ref={mapElement} style={{ minHeight: '400px' }} />
                     <hr />
-                    <h3>다른 음식 종류의 식당 확인하기</h3>
+                    <h3>다른 식당 확인하기</h3>
                     <OtherList></OtherList>
                 </Card>
             </div>
