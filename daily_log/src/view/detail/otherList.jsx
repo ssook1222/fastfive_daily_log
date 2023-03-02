@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {useLocation} from 'react-router-dom';
 
 import Grid2 from "@mui/material/Unstable_Grid2";
@@ -9,14 +9,14 @@ import koreanData from "../../data/totalKoreanData.json"
 import JapanData from "../../data/totalJapaneseData.json"
 
 function OtherList() {
-    let name = useLocation().state.data.name;
-    let type = useLocation().state.data.type;
     let id = useLocation().state.data.id;
+
+    const newList = totalData.list.filter((data) => data.id !== id)
 
     return (
         <Grid2 container spacing={3} id="main-item-list">
                             <>
-                                {totalData.list?.map((contents) =>(
+                                {newList?.slice(0,3).map((contents) =>(
                                 <Grid2 item xs={4} sm={4} md={4}>
                                     {
                                         contents.id!==id &&
