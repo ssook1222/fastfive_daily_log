@@ -47,6 +47,15 @@
       "lat": 37.5631, "lng":126.9752,
       "url":"https://ldb-phinf.pstatic.net/20200326_36/1585200551163aAPgh_JPEG/BUTrqi84RhNF1G7hBH2GEtyG.jpg",
       "opinion": "시청역 근처 몇 없는 분식집 중 그나마 찾은 맛집! 양도 많고 맛도 괜찮다."
+    },
+    {
+      "id": 8, "name": "고온 셀렉 다이닝 푸드코트",
+      "type": "kor",
+      "lat": 37.5638, "lng":126.9724,
+      "url":"https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200111_147%2F1578715212109bPToy_JPEG%2FkaatqDiBkNB9ayYU3DJsQx8Q.JPG.jpg",
+      "opinion": "무모한 초밥은 초밥보다 닭꼬치가 더 맛있다. 그냥 무난한 푸드코드."
+
     }
+
   ]
 }
