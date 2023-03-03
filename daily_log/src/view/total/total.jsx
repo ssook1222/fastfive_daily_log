@@ -40,10 +40,8 @@ function TotalView() {
     }, [page]);
 
     const handleClick = (e) => {
-        console.log(e.currentTarget.id);
         const userChoice = e.currentTarget.id;
         setChoice(userChoice);
-        console.log(userChoice);
     };
 
     return (
@@ -66,7 +64,7 @@ function TotalView() {
                         {choice==="전체" &&
                         <>
                             <Grid2 container spacing={3} id="main-item-list">
-                                <>{data.list?.slice(start, end).map((contents) =>(
+                                <>{totalData.list?.slice(start, end).map((contents) =>(
                                   <Grid2 item xs={11} sm={4} md={4}>
                                            <Link to="/detail" state={{data : contents}}>
                                                 <Card className="main_list" style={{display:'inline-block', width:'95%'
@@ -96,8 +94,8 @@ function TotalView() {
                         <Grid2 container spacing={3} id="main-item-list">
                             <>
                                 {koreanData.list.map((contents) =>(
-                                <Grid2 item xs={4} sm={4} md={4}>
-                                    <Card className="back_list" style={{display:'inline-block'}}>
+                                <Grid2 item xs={11} sm={4} md={4}>
+                                    <Card className="back_list" style={{display:'inline-block', width:'95%', marginLeft: "10px"}}>
                                         <img className="list_image" src={contents.url}></img>
                                         <h2 className="list_card_title">{contents.name}</h2>
                                         <p className="my_opinion">{contents.opinion}</p>
@@ -112,8 +110,8 @@ function TotalView() {
                         <Grid2 container spacing={3} id="main-item-list">
                             <>
                                 {japaneseData.list.map((contents) =>(
-                                    <Grid2 item xs={4} sm={4} md={4}>
-                                        <Card className="back_list" style={{display:'inline-block'}}>
+                                    <Grid2 item xs={11} sm={4} md={4}>
+                                        <Card className="back_list" style={{display:'inline-block', width:'95%', marginLeft: "10px"}}>
                                             <img className="list_image" src={contents.url}></img>
                                             <h2 className="list_card_title">{contents.name}</h2>
                                             <p className="my_opinion">{contents.opinion}</p>
@@ -128,8 +126,8 @@ function TotalView() {
                         <Grid2 container spacing={3} id="main-item-list">
                             <>
                                 {ItalyData.list.map((contents) =>(
-                                    <Grid2 item xs={4} sm={4} md={4}>
-                                        <Card className="back_list" style={{display:'inline-block'}}>
+                                    <Grid2 item xs={11} sm={4} md={4}>
+                                        <Card className="back_list" style={{display:'inline-block', width:'95%' , marginLeft: "10px"}}>
                                             <img className="list_image" src={contents.url}></img>
                                             <h2 className="list_card_title">{contents.name}</h2>
                                             <p className="my_opinion">{contents.opinion}</p>
@@ -148,8 +146,8 @@ function TotalView() {
                         <Grid2 container spacing={3} id="main-item-list">
                             <>
                                 {vietnamData.list.map((contents) =>(
-                                    <Grid2 item xs={4} sm={4} md={4}>
-                                        <Card className="back_list" style={{display:'inline-block'}}>
+                                    <Grid2 item xs={11} sm={4} md={4}>
+                                        <Card className="back_list" style={{display:'inline-block', width:'95%', marginLeft: "10px"}}>
                                             <img className="list_image" src={contents.url}></img>
                                             <h2 className="list_card_title">{contents.name}</h2>
                                             <p className="my_opinion">{contents.opinion}</p>
