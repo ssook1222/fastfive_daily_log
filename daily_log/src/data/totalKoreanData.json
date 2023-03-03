@@ -22,6 +22,13 @@
       "id": 5, "name": "크레이지후라이",
       "url":"https://ldb-phinf.pstatic.net/20200326_36/1585200551163aAPgh_JPEG/BUTrqi84RhNF1G7hBH2GEtyG.jpg?type=f804_408_60_sharpen",
       "opinion": "시청역 근처 몇 없는 분식집 중 그나마 찾은 맛집! 양도 많고 맛도 괜찮다."
+    },
+    {
+      "id": 6, "name": "소공동뚝배기집",
+      "type": "kor",
+      "lat": 37.5637, "lng":126.973,
+      "url":"https://lh5.googleusercontent.com/p/AF1QipNQWReo3pE-LoufjPtmUoRvu2gF9HcQC3-7Wi5E=w408-h272-k-no",
+      "opinion": "회전율이 빠르고, 음식이 되게 빠르게 나옴 → 빠르게 먹고 산책하고 싶을 때 가는 거 추천!"
     }
   ]
 }
