@@ -1,6 +1,7 @@
 {
   "list": [
     { "id": 1, "name": "정일백 하노이 쌀국수", "kind": "베트남식",
+      "lat": 37.5634, "lng":126.9706,
       "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MTBfMTM5%2FMDAxNjMxMjU3ODM3MjU0.B8NTCOHP9UlP-aEl4PAiXt0x6yh6mF88HNpCZaVEw0wg.SQOtJolxsffWIJtBhKSytRyIjE5V8mqOvAWh5PweZNUg.JPEG.yyj093%2F20210910%25A3%25DF123519.jpg",
       "opinion": "회전율이 빨라 웨이팅이 적은 편, 가격 대비 맛도 적당하지만 카운터와 좌석 간의 거리가 너무 가까워 잘못 걸리면 굉장히 불편하다."
     }
