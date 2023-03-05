@@ -59,13 +59,14 @@ function TotalView() {
                             <Chip id="중식" name="중식" label="중식" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}}/>
                             <Chip id="베트남식" name="베트남식" label="베트남식" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}}/>
                         </div>
+
                         <hr  style={{marginBottom:"20px"}}/>
                         {/*사용자 선택 안 했을 때 && 전체 눌렀을 때 */}
                         {choice==="전체" &&
                         <>
                             <Grid2 container spacing={3} id="main-item-list">
                                 <>{totalData.list?.slice(start, end).map((contents) =>(
-                                  <Grid2 item xs={11} sm={4} md={4}>
+                                  <Grid2 item xs={12} sm={4} md={4}>
                                            <Link to="/detail" state={{data : contents}}>
                                                 <Card className="main_list" style={{display:'inline-block', width:'95%'
                                                                                     , marginLeft: "10px" , height:'100%'}}>
@@ -94,7 +95,7 @@ function TotalView() {
                         <>
                             <Grid2 container spacing={3} id="main-item-list">
                                 <>{koreanData.list?.slice(start, end).map((contents) =>(
-                                  <Grid2 item xs={11} sm={4} md={4}>
+                                  <Grid2 item xs={12} sm={4} md={4}>
                                            <Link to="/detail" state={{data : contents}}>
                                                 <Card className="main_list" style={{display:'inline-block', width:'95%'
                                                                                     , marginLeft: "10px" , height:'100%'}}>
@@ -123,7 +124,7 @@ function TotalView() {
                         <>
                             <Grid2 container spacing={3} id="main-item-list">
                                 <>{japaneseData.list?.slice(start, end).map((contents) =>(
-                                  <Grid2 item xs={11} sm={4} md={4}>
+                                  <Grid2 item xs={12} sm={4} md={4}>
                                            <Link to="/detail" state={{data : contents}}>
                                                 <Card className="main_list" style={{display:'inline-block', width:'95%'
                                                                                     , marginLeft: "10px" , height:'100%'}}>
@@ -152,7 +153,7 @@ function TotalView() {
                         <>
                             <Grid2 container spacing={3} id="main-item-list">
                                 <>{ItalyData.list?.slice(start, end).map((contents) =>(
-                                  <Grid2 item xs={11} sm={4} md={4}>
+                                  <Grid2 item xs={12} sm={4} md={4}>
                                            <Link to="/detail" state={{data : contents}}>
                                                 <Card className="main_list" style={{display:'inline-block', width:'95%'
                                                                                     , marginLeft: "10px" , height:'100%'}}>
@@ -185,7 +186,7 @@ function TotalView() {
                         <>
                             <Grid2 container spacing={3} id="main-item-list">
                                 <>{vietnamData.list?.slice(start, end).map((contents) =>(
-                                  <Grid2 item xs={11} sm={4} md={4}>
+                                  <Grid2 item xs={12} sm={4} md={4}>
                                            <Link to="/detail" state={{data : contents}}>
                                                 <Card className="main_list" style={{display:'inline-block', width:'95%'
                                                                                     , marginLeft: "10px" , height:'100%'}}>

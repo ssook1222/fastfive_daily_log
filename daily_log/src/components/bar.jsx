@@ -3,11 +3,11 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = ['전체 식당 페이지 확인', '상위 맛집 확인'];
 const link =['/total', '/'];
@@ -44,6 +44,7 @@ const NavBar = () => {
                             onClick={handleOpenNavMenu}
                             color="inherit"
                         >
+                            <MenuIcon sx={{color: "black"}} />
                         </IconButton>
                         <Menu
                             id="menu-appbar"
@@ -63,10 +64,12 @@ const NavBar = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
+                            {pages.map((page, index) => (
                                 <MenuItem key={page}
                                           onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Button
+                                        style={{color:"black"}}
+                                        href={link[index]}>{page}</Button>
                                 </MenuItem>
                             ))}
                         </Menu>

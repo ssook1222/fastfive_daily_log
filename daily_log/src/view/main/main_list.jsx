@@ -24,7 +24,7 @@ export const Paging = () => {
      <>
        <Grid2 container spacing={3} id="main-item-list">
               <>{data.list?.slice(start, end).map((contents) =>(
-                  <Grid2 item xs={11} sm={4} md={4}>
+                  <Grid2 item xs={12} sm={4} md={4}>
                            <Link to="/detail" state={{data : contents}}>
                                 <Card className="main_list" style={{display:'inline-block', width:'95%'
                                                                     , marginLeft: "10px" , height:'100%'}}>

@@ -28,7 +28,7 @@ function OtherList() {
         <Grid2 container spacing={3} id="main-item-list">
                             <>
                                 {newList?.slice(start,end).map((contents) =>(
-                                <Grid2 item xs={4} sm={4} md={4}>
+                                <Grid2 item xs={12} sm={4} md={4}>
                                     {
                                         contents.id!==id &&
                                         <Card className="back_list" style={{display: 'inline-block', width:"100%"}}>
