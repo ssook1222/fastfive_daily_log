@@ -29,11 +29,38 @@ function TotalView() {
     const [page, setPage] = useState(1);
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(6);
-    const pageNumber = [];
 
+    //total
+    const pageNumber = [];
     for (let i = 1; i <= Math.ceil(data.list?.length / 6); i++) {
         pageNumber.push(i);
     }
+
+    //kr
+    const pageNumber_kr = [];
+    for (let i = 1; i <= Math.ceil(koreanData.list?.length / 6); i++) {
+        pageNumber_kr.push(i);
+    }
+
+    //jp
+    const pageNumber_jp = [];
+    for (let i = 1; i <= Math.ceil(japaneseData.list?.length / 6); i++) {
+        pageNumber_jp.push(i);
+    }
+
+    //italy
+    const pageNumber_italy = [];
+    for (let i = 1; i <= Math.ceil(ItalyData.list?.length / 6); i++) {
+        pageNumber_italy.push(i);
+    }
+
+    //vt
+    const pageNumber_vt = [];
+    for (let i = 1; i <= Math.ceil(vietnamData.list?.length / 6); i++) {
+        pageNumber_vt.push(i);
+    }
+
+
     useEffect(() => {
         setStart((page - 1) * 6);
         setEnd(page * 6);
@@ -110,7 +137,7 @@ function TotalView() {
                             </Grid2>
                             <nav style={{ listStyleType: "none", display: "flex" }}>
                                     <div className={"list"} style={{ listStyleType: "none", display: "flex" }}>
-                                    {pageNumber.map((num) => (
+                                    {pageNumber_kr.map((num) => (
                                       <li key={num} onClick={() => setPage(num)}>
                                         <Button style={{marginRight:"20px"}} className={"page_but"} variant={"outlined"} size={"medium"}>{num}</Button>
                                       </li>
@@ -139,7 +166,7 @@ function TotalView() {
                             </Grid2>
                             <nav style={{ listStyleType: "none", display: "flex" }}>
                                     <div className={"list"} style={{ listStyleType: "none", display: "flex" }}>
-                                    {pageNumber.map((num) => (
+                                    {pageNumber_jp.map((num) => (
                                       <li key={num} onClick={() => setPage(num)}>
                                         <Button style={{marginRight:"20px"}} className={"page_but"} variant={"outlined"} size={"medium"}>{num}</Button>
                                       </li>
@@ -168,7 +195,7 @@ function TotalView() {
                             </Grid2>
                             <nav style={{ listStyleType: "none", display: "flex" }}>
                                     <div className={"list"} style={{ listStyleType: "none", display: "flex" }}>
-                                    {pageNumber.map((num) => (
+                                    {pageNumber_italy.map((num) => (
                                       <li key={num} onClick={() => setPage(num)}>
                                         <Button style={{marginRight:"20px"}} className={"page_but"} variant={"outlined"} size={"medium"}>{num}</Button>
                                       </li>
@@ -201,7 +228,7 @@ function TotalView() {
                             </Grid2>
                             <nav style={{ listStyleType: "none", display: "flex" }}>
                                     <div className={"list"} style={{ listStyleType: "none", display: "flex" }}>
-                                    {pageNumber.map((num) => (
+                                    {pageNumber_vt.map((num) => (
                                       <li key={num} onClick={() => setPage(num)}>
                                         <Button style={{marginRight:"20px"}} className={"page_but"} variant={"outlined"} size={"medium"}>{num}</Button>
                                       </li>
