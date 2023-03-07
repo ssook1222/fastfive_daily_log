@@ -16,7 +16,8 @@ function Main_view(){
         <div className="main-background">
             <div className="main-layout">
                 <NavBar></NavBar>
-                <h1 id="main-title">패스트파이브 근처 식당 PICK</h1>
+                <h1 id="main-title">PICK! 회사 근처 맛집</h1>
+                <h3 id="sub-title">광화문역과 시청역 중심 식당들만 있습니다.</h3>
                 <Card id="main-card">
                     <CardContent>
                         <p id="card-top-guide">
