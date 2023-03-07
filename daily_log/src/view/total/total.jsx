@@ -75,7 +75,8 @@ function TotalView() {
         <div className="total-background">
             <div className="total-layout">
                 <NavBar></NavBar>
-                <h1 id="total-title">패스트파이브 근처 식당</h1>
+                <h1 id="total-title">회사 근처 식당</h1>
+                <h3 id="sub-title">광화문역과 시청역 중심 식당들만 있습니다.</h3>
                 <Card id="total-back-card">
                     <CardContent>
                         <div className={"user-choice"}>

@@ -21,11 +21,19 @@ body{
 }
 #main-title{
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: -1%;
     font-size: 600%;
     color: white;
     text-shadow: -1px 0px 7px #a9cdc8, 0px 1px 7px #a9cdc8, 1px 0px 7px #a9cdc8, 0px -1px 7px #a9cdc8;
 }
+
+#sub-title{
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 150%;
+    color: #656262;
+}
+
 #main-card{
     width: 80%;
     height: 100%;
