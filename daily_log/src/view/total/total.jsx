@@ -6,7 +6,7 @@ import NavBar from "../../components/bar";
 import Footer from '../../components/footer'
 
 //import MUI
-import {Button, Card, CardActionArea, CardContent, Typography} from "@mui/material";
+import {Button, Card, CardActionArea, CardContent, Tabs, Typography} from "@mui/material";
 import Chip from '@mui/material/Chip';
 import Grid2 from '@mui/material/Unstable_Grid2';
 
@@ -21,6 +21,18 @@ import vietnamData from '../../data/totalVietnamData.json'
 import totalData from '../../data/totalData.json'
 import data from "../../data/topData.json";
 import {Link} from "react-router-dom";
+import Box from "@mui/material/Box";
+import {Tab} from "@mui/icons-material";
+import * as PropTypes from "prop-types";
+
+function TabPanel(props) {
+    return null;
+}
+
+TabPanel.propTypes = {
+    index: PropTypes.number,
+    children: PropTypes.node
+};
 
 function TotalView() {
 
@@ -60,7 +72,6 @@ function TotalView() {
         pageNumber_vt.push(i);
     }
 
-
     useEffect(() => {
         setStart((page - 1) * 6);
         setEnd(page * 6);
@@ -77,6 +88,23 @@ function TotalView() {
                 <NavBar></NavBar>
                 <h1 id="total-title">회사 근처 식당</h1>
                 <h3 id="sub-title">광화문역과 시청역 중심 식당들만 있습니다.</h3>
+
+                {/*https://mui.com/material-ui/react-tabs/*/}
+                {/*<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>*/}
+                {/*  <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">*/}
+                {/*    <Tab label="Item One" {...a11yProps(0)} />*/}
+                {/*    <Tab label="Item Two" {...a11yProps(1)} />*/}
+                {/*    <Tab label="Item Three" {...a11yProps(2)} />*/}
+                {/*  </Tabs>*/}
+                {/*</Box>*/}
+                {/*<TabPanel value={value} index={0}>*/}
+                {/*  Item One*/}
+                {/*</TabPanel>*/}
+                {/*<TabPanel value={value} index={1}>*/}
+                {/*  Item Two*/}
+                {/*</TabPanel>*/}
+
+
                 <Card id="total-back-card">
                     <CardContent>
                         <div className={"user-choice"}>
