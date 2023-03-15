@@ -278,5 +278,6 @@ export default function BasicTabs() {
                     </CardContent>
       </TabPanel>
     </Card>
+
   );
 }

@@ -10,7 +10,6 @@ import './total.css'
 import Tab from "./tab"
 
 function TotalView() {
-
     return (
         <div className="total-background">
             <div className="total-layout">
