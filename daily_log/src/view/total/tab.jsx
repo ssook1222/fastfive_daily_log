@@ -103,18 +103,17 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: '80%' , margin : "auto"}}>
+    <Card sx={{ width: '80%' , margin : "auto"}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="광화문" {...a11yProps(0)} />
-          <Tab label="시청" {...a11yProps(1)} />
+        <Tabs style={{marginLeft: "10px", padding:"10px"}} value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab style={{fontSize :"1em"}} label="광화문" {...a11yProps(0)} />
+          <Tab style={{fontSize :"1em"}} label="시청" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
 
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Card id="total-back-card">
                     <CardContent>
                         <div className={"user-choice"}>
                             <Chip id="전체" name="전체" label="전체" variant="outlined" onClick={handleClick} style={{marginRight : "10px"}} />
@@ -277,8 +276,8 @@ export default function BasicTabs() {
                         }
 
                     </CardContent>
-                </Card>
       </TabPanel>
-    </Box>
+    </Card>
+
   );
 }
