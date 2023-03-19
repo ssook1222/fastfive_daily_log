@@ -6,10 +6,11 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function CustomizedInputBase() {
   return (
-    <div style={{display:"flex", alignItems: "center", height:"100%"}}>
+    <div style={{display:"flex", alignItems: "center", height:"100%", flexWrap: "wrap", justifyContent: "center"}}>
+        <h1 id="main-title">식당-일지</h1>
         <Paper
           component="form"
-          style={{margin:"auto"}}
+          style={{marginRight:"auto", marginLeft:"auto", marginTop:"-20%"}}
           sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: "80%" }}
         >
           <InputBase
