@@ -3,6 +3,7 @@ import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
+
 import ReactSearchBox from "react-search-box";
 
 import './start.css'
@@ -27,6 +28,7 @@ export default function CustomizedInputBase() {
         <Paper
           component="form"
           style={{marginRight:"auto", marginLeft:"auto", marginTop:"150px", position: "fixed", backgroundColor:'none'}}
+
           sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: "90%" }}
         >
         <div style={{margin:"auto", display:"block", width:"100%"}}>
@@ -55,6 +57,7 @@ export default function CustomizedInputBase() {
                     <h3 className="link-it" style={{color: "gray", fontSize: '15px'}}>전체 음식점 보기</h3>
             </a>
         </div>
+
     </div>
   );
 }
