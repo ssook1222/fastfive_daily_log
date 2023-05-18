@@ -1,8 +1,40 @@
-#main-title{
-    margin-bottom: -300px;
-    font-size: 600%;
-    color: white;
-    width: 50%;
-    flex-basis: 100%;
-    text-shadow: -1px 0px 7px #a9cdc8, 0px 1px 7px #a9cdc8, 1px 0px 7px #a9cdc8, 0px -1px 7px #a9cdc8;
+.sc-gswNZR, dAZYal{
+    width: 100% !important;
+    margin: auto !important;
+    font-size: 18px !important;
+}
+
+.css-arxvkg-MuiPaper-root{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width: 280px){
+
+    #main-title{
+        font-size: 60px !important;
+    }
+
+    .link-it{
+        font-size: 12px !important;
+    }
+
+    .sc-gswNZR, dAZYal{
+    font-size: 13px !important;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 375px){
+
+    #main-title{
+        font-size: 60px !important;
+    }
+
+    .link-it{
+        font-size: 12px !important;
+    }
+
+    .sc-gswNZR, dAZYal{
+    font-size: 13px !important;
+    }
 }
