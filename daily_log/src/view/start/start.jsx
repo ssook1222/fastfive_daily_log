@@ -49,11 +49,12 @@ export default function CustomizedInputBase() {
         </Paper>
 
         <div style={{width: "100%", textAlign: 'center', marginTop: "300px",position:"fixed"}}>
-            <a href="#" style={{width: "30%", textDecorationLine: 'none', display: 'inline-block' }}>
+            <a href="./top" style={{width: "30%", textDecorationLine: 'none', display: 'inline-block' }}>
                     <h3 className="link-it" style={{color: "gray", fontSize: '15px'}}>추천 음식점 </h3>
             </a>
             | <div style={{display: 'inline-block'}}></div>
-            <a href="#" style={{width: "30%", textDecorationLine: 'none', display: 'inline-block'}}>
+            <a href="./total" style={{width: "30%", textDecorationLine: 'none', display: 'inline-block'}}>
+
                     <h3 className="link-it" style={{color: "gray", fontSize: '15px'}}>전체 음식점 보기</h3>
             </a>
         </div>
