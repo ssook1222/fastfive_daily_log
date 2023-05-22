@@ -10,6 +10,7 @@ import './start.css'
 import data from '../../data/totalData.json'
 
 import {useState} from "react";
+import {Button} from "@mui/material";
 
 export default function CustomizedInputBase() {
 
@@ -33,7 +34,7 @@ export default function CustomizedInputBase() {
         >
         <div style={{margin:"auto", display:"block", width:"100%"}}>
               <ReactSearchBox
-                  placeholder="음식점을 입력해주세요."
+                  placeholder=" 음식점을 입력해주세요."
                   data={data.list}
                   callback={record => console.log(record)}
                   onFocus={() => {
@@ -43,8 +44,10 @@ export default function CustomizedInputBase() {
                   fuseConfigs={{
                       threshold: 0.05,
                   }}
+                  leftIcon={'🔎'}
                   value=""
               />
+              <Button style={{display:"inline-block"}}>Search</Button>
           </div>
         </Paper>
 
