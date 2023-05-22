@@ -57,6 +57,7 @@ export default function CustomizedInputBase() {
             </a>
             | <div style={{display: 'inline-block'}}></div>
             <a href="./total" style={{width: "30%", textDecorationLine: 'none', display: 'inline-block'}}>
+
                     <h3 className="link-it" style={{color: "gray", fontSize: '15px'}}>전체 음식점 보기</h3>
             </a>
         </div>
