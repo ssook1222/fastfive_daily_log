@@ -1,10 +1,13 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
 html{
     height: 100%;
 }
 
 body{
     background: linear-gradient(#defde6, #d1e7fd) no-repeat fixed;
-    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 #root{
     height: 100%;
