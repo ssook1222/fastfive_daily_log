@@ -106,8 +106,8 @@ export default function BasicTabs() {
     <Card sx={{ width: '80%' , margin : "auto"}}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs style={{marginLeft: "10px", padding:"10px"}} value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab style={{fontSize :"1em"}} label="광화문" {...a11yProps(0)} />
-          <Tab style={{fontSize :"1em"}} label="시청" {...a11yProps(1)} />
+          <Tab style={{fontSize :"1em", fontFamily: 'IBM Plex Sans KR'}} label="광화문" {...a11yProps(0)} />
+          <Tab style={{fontSize :"1em", fontFamily: 'IBM Plex Sans KR'}} label="시청" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

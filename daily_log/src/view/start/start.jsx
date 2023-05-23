@@ -17,8 +17,10 @@ export default function CustomizedInputBase() {
   const [search, setSearch] = useState('');
 
   const onChange = (value) => {
-      if(value === "덕수궁 부대찌개" || value === "조조칼국수"){
-          console.log(value)
+      if(value === "덕수궁 부대찌개" || value === "조조칼국수" || value === "백소정" || value === "엉클파스타"
+      || value === "돌담집삼겹살" || value === "서대문식당" || value === "크레이지후라이" || value === "고온 셀렉 다이닝 푸드코트"
+      || value === "쇼부라멘" || value === "먼키" || value === "소공동뚝배기집"
+      ){
           setSearch(value)
       }
   }
@@ -32,7 +34,8 @@ export default function CustomizedInputBase() {
 
           sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: "90%" }}
         >
-        <div style={{margin:"auto", display:"block", width:"100%"}}>
+        <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", width:"100%"}}>
+            <div style={{width: "80%", textAlign: "center"}}>
               <ReactSearchBox
                   placeholder=" 음식점을 입력해주세요."
                   data={data.list}
@@ -47,7 +50,10 @@ export default function CustomizedInputBase() {
                   leftIcon={'🔎'}
                   value=""
               />
-              <Button style={{display:"inline-block"}}>Search</Button>
+            </div>
+              <Button style={{width: "10%", marginLeft:"2px"
+                  , fontFamily:'IBM Plex Sans KR' , color: "gray",
+                  boxShadow: '-1px 0px 7px #a9cdc8' }}>Search</Button>
           </div>
         </Paper>
 
